@@ -125,16 +125,17 @@
 
   .card-container .card:not(.highlight-card):hover .material-icons path {
     fill: rgb(105, 103, 103);
-  }
+   }
 
   .card.highlight-card {
     background-color: #1976d2;
     color: white;
-    font-weight: 600;
+    font-weight: 300;
     border: none;
     width: auto;
     min-width: 30%;
-    position: relative;
+    /* position: relative; */
+    
   }
 
   .card.card.highlight-card span {
@@ -320,7 +321,7 @@
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
 
-    <svg id="rocket" alt="Rocket Ship" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678" viewBox="0 0 101.678 101.678">
+    <svg id="rocket" alt="Rocket Ship" xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101.678 101.678">
       <g id="Group_83" data-name="Group 83" transform="translate(-141 -696)">
         <circle id="Ellipse_8" data-name="Ellipse 8" cx="50.839" cy="50.839" r="50.839" transform="translate(141 696)" fill="#dd0031"/>
         <g id="Group_47" data-name="Group 47" transform="translate(165.185 720.185)">
@@ -534,11 +535,22 @@
     col-1
   </div>
   <div class="col-md-4">
-    col-2
+    <button igxButton="flat">Kaydet</button>
+    <button>Kaydet</button>
   </div>
   <div class="col-md-4">
     col-3
   </div>
 </div>
+
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+  fullScreen="true"
+>
+  <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
 
 <router-outlet></router-outlet>
