@@ -12,8 +12,8 @@ export class AppComponent implements OnInit {
   constructor(private toastr: ToastrService,
     private spinner: NgxSpinnerService) {}
 
-  ngOnInit() {
-    this.showSuccess();
+  ngOnInit() {  
+    this.showSuccess();    
     this.showSpinner();
   }
 
@@ -26,9 +26,9 @@ export class AppComponent implements OnInit {
     this.spinner.show();
 
     setTimeout(() => {
-      /** spinner ends after 5 seconds */
+      /** spinner ends after 2 seconds */
       this.spinner.hide();
-    }, 5000);
+    }, 2000);
   }
 
 }
